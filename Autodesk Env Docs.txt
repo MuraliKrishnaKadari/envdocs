@@ -1,0 +1,9 @@
+Autodesk Changes: 
+•	Create a column CSN for the cls_Organization table through Commerce Manager. 
+•	Add images for Autodesk logo in Media->Logos->Vendors-> through CMS.  
+o	autodesk.png
+o	autodesk6040.png
+•	Create two properties in appsettings in commerce manager in which one has comma-separated resellers, the other has comma-separated Autodesk product ids i.e AutoDeskProductExclusionList, AutoDeskExclusionResellerList.
+•	Did for dev,Check for stage (insert into [cls_AppSettings] (AppSettingsId,[key],value,is_active,category) values( newid(),'CMSProductVendorRootId',4513,1,'Product')).
+•	ssp_GetLoggedInUserProfile changes.
+•	Added new property to Commerce Manager-> Application Settings -> GetAutodeskOpportunitiesById
